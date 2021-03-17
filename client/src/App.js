@@ -12,7 +12,7 @@ function App() {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <a>
-            Deploying some k8s, version 2!
+            Deploying some k8s, version 4!
           </a>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
