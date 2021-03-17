@@ -13,7 +13,7 @@ spec:
     - hosts:
         - ambientself.com
         - www.ambientself.com
-    secretName: ambientself-com
+      secretName: ambientself-com
   rules:
     - host: ambientself.com
       http:
