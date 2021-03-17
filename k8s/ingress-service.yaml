@@ -10,9 +10,9 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: 'true'
 spec:
   tls:
-    -hosts:
-      - ambientself.com
-      - www.ambientself.com
+    - hosts:
+        - ambientself.com
+        - www.ambientself.com
     secretName: ambientself-com
   rules:
     - host: ambientself.com
