@@ -10,7 +10,7 @@ docker push ambientself/multi-client:$SHA
 docker push ambientself/multi-server:$SHA
 docker push ambientself/multi-worker:$SHA
 
-kubectl apply -f k8s
+kubectl apply -f k8s --validate=false
 kubectl set image deployments/client-deployment client=ambientself/multi-client:$SHA
 kubectl set image deployments/server-deployment server=ambientself/multi-server:$SHA
 kubectl set image deployments/worker-deployment worker=ambientself/multi-worker:$SHA

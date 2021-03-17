@@ -11,8 +11,8 @@ metadata:
 spec:
   tls:
     - hosts:
-      - ambientself.com
-      - www.ambientself.com
+        - ambientself.com
+        - www.ambientself.com
     secretName: ambientself-com
   rules:
     - host: ambientself.com
