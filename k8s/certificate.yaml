@@ -1,0 +1,20 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: ambientself-com-tls
+spec:
+  secretName: ambientself-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: ambientself.com
+  dnsNames:
+    - ambientself.com
+    - www.ambientself.com
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - ambientself.com
+          - www.ambientself.com
